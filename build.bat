@@ -5,4 +5,5 @@ if not exist dist (
 )
 
 @REM g++ source/Main.c++ source/headers/*.h -o dist/SL.exe
-g++ source/Main.c++ -o dist/SL.exe -std=c++17 %*
+@REM g++ source/*.c++ source/Main.c++ -o dist/SL.exe -std=c++17 %*
+g++ source/*.c++ -o dist/SL.exe -std=c++17 %*
